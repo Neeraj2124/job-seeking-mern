@@ -7,6 +7,10 @@ cloudinary.v2.config({
   api_secret: process.env.CLOUDINARY_CLIENT_SECRET,
 });
 
+// if (process.env.NODE_ENV-- - "production") {
+//   app.use(express.static("frontend/"));
+// }
+
 app.listen(process.env.PORT, () => {
   console.log(`Server is running on port ${process.env.PORT}`);
 });
